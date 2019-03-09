@@ -1,2 +1,3 @@
-# 16CK2-LTWEB1-NHOM11
-Đồ án cuối kỳ lập trình web1 - Nhóm 11
+CÀI ĐẶT:
+ - Cài đặt xampp v3.2.2
+ - Coppy file course vào folder: *xampp\htdocs\
