@@ -1,0 +1,188 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-image: url('../img/bg.png');
+    background-size: cover;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#notificationBox{
+    width: 1000px;
+    height: 50px;
+    border-radius: 10px;
+    border: 2px solid rgb(172, 255, 47);
+    background: rgba(255, 255, 255, 0.664);
+    text-align: center;
+    padding-top: 15px;
+    box-sizing: border-box; 
+    color: rgb(94, 94, 94);
+    position: relative;
+    top: -50px;
+    left: 180px;
+    transition: all 0.5s ease-in-out;
+}
+
+#notificationBox.show{
+    width: 1000px;
+    height: 50px;
+    border-radius: 10px;
+    border: 2px solid rgb(172, 255, 47);
+    background: rgba(255, 255, 255, 0.664);
+    text-align: center;
+    padding-top: 15px;
+    box-sizing: border-box; 
+    color: rgb(94, 94, 94);
+    position: relative;
+    top: 25px;
+    left: 180px;
+    transition: all 0.5s ease-in-out;
+}
+
+#FormDangNhap{
+    background: rgba(255, 255, 255, 0.664);
+    width: 430px;
+    height: 430px;
+    position: absolute;
+    top: 135px;
+    left: 455px;
+    padding: 10px;
+    border-radius: 50%;
+    border: 15px solid greenyellow;
+    box-shadow: 10px 10px gray;
+}
+
+#FormDangNhap b{
+    color: rgb(0, 138, 156);
+    width: 390px;
+    height: 1em;
+    text-align: center;
+    font-size: 30px;
+    position: absolute;
+    margin-left: 20px; 
+    text-shadow: 3px 3px 3px rgb(197, 197, 197);
+}
+
+form{
+    position: absolute;
+    left: 17%;
+    top:35%; 
+}
+
+input[type = text] {
+    border: 1px solid rgb(0, 81, 128);
+    width: 300px;
+    height: 30px;
+    border-radius: 3px;
+    background-color: white;
+    background-image: url('../img/loginname_icon.png');
+    background-size: 25px;
+    background-repeat: no-repeat;
+    background-position: 1px 1px;
+    padding-left: 30px;
+    margin-bottom: 15px;
+    box-shadow: 3px 3px 3px 1px rgb(207, 207, 207);
+    transition: all 0.2s ease-out;
+}
+
+input[type = password] {
+    border: 1px solid rgb(0, 81, 128);
+    width: 300px;
+    height: 30px;
+    border-radius: 3px;
+    background-color: white;
+    background-image: url('../img/password_icon.png');
+    background-size: 25px;
+    background-repeat: no-repeat;
+    background-position: 1px 1px;
+    padding-left: 30px;
+    margin-bottom: 15px;
+    box-shadow: 3px 3px 3px 1px rgb(207, 207, 207);
+    transition: all 0.2s ease-out;
+}
+
+input[type = text]:hover, input[type = password]:hover{
+    height: 40px;
+    background-position: 1px 5px;
+}
+
+#button{
+    background: linear-gradient(to top left, rgb(38, 0, 255), rgb(1, 255, 242));
+    width: 300px;
+    height: 40px;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 15px;
+    border-radius: 3px;
+    border: 0px solid;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+#button:hover {
+    background: linear-gradient(to top left, green, rgb(130, 255, 72));
+    width: 300px;
+    height: 55px;
+}
+
+#ButtonGroup{
+    width: 300px;
+    height: 35px;
+    min-height: 20px;
+    margin-top: 53px;
+    margin-left: 65px;
+    border: 2px solid rgb(255, 123, 0);
+    box-shadow: 3px 3px 3px 1px rgb(207, 207, 207);
+    border-radius: 5px;
+    transition: all 0.2s ease-in-out;
+}
+
+#ButtonGroup:hover{
+    transform: scale(1.2);
+}
+
+#KDbtn{
+    width: 148px;
+    height: 100%;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    text-align: center;
+    cursor: pointer;
+    display: inline-table;
+    padding: 5px;
+    box-sizing: border-box;
+    right: -0px;
+    position: relative; 
+}
+
+#KNbtn{
+    height: 100%;
+    width: 147px;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    cursor: pointer;
+    display: inline-table;
+    padding: 5px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+::placeholder{
+    color: rgb(163, 163, 163);
+}
+
+#FormDangNhap p{
+    color: rgb(0, 81, 128); 
+    text-shadow: 3px 3px 3px rgb(197, 197, 197);   
+}
+
+#FormDangNhap i{
+    color: rgb(0, 84, 95);
+    font-size: 15px;
+}

@@ -1,0 +1,228 @@
+#ProfileArea{
+    box-sizing: border-box;
+    padding: 10px;
+    width: 900px;
+    min-height: 610px;
+    background: rgba(0, 148, 0, 0.322);
+    position: absolute;
+    top: 60px;
+    left: 370px;
+}
+
+#Avatar_And_Cover_Img{
+    padding: 10px;
+    box-sizing: border-box;
+    width: 100%;
+    height: 150px;
+    background-image: url('../img/default-cover-img.jpg');
+    background-size: cover;
+    border-radius: 30px;
+    border: 3px solid white;
+}
+
+#Profile_avatar{
+    background-image: url('../img/avatar/default-avatar.jpg');
+    background-size: cover;
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    float: left;
+}
+
+#ProfileName{
+    position: relative;
+    top: 90px;
+    left: 25px;
+    color: rgb(255, 255, 255);
+}
+
+#Relationship_btn{
+    position: relative;
+    top: 70px;
+    left: 635px;
+    width: 80px;
+    height: 30px;
+    background: rgb(0, 162, 255);
+    border: none;
+    border-radius: 5px;
+    color: white;
+    border: 1px solid white;
+}
+
+#UpdateProfile_btn{
+    position: relative;
+    left: 770px;
+    width: 80px;
+    height: 30px;
+    background: rgb(0, 162, 255);
+    border: none;
+    border-radius: 5px;
+    color: white;
+    border: 1px solid white;
+}
+
+#UpdateProfile_btn:hover{
+    background: rgb(0, 140, 255);
+    color: rgb(255, 255, 255);
+}
+
+
+#Relationship_btn:hover{
+
+    background: rgb(255, 255, 255);
+    color: rgb(0, 162, 255);
+}
+
+#ProfilesInfor{
+    border-radius: 10px;
+    height:fit-content;
+    background: white;
+    margin-top:10px;
+    padding: 10px;
+}
+
+#ProfilesInfor h3{
+    color: rgb(3, 133, 219);
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+table{
+    width: 100%;
+}
+
+table th{
+    text-align: left;
+    padding-left: 20px;
+    width: 150px;
+    color: rgb(0, 48, 110);
+}
+
+table td{
+    text-align: left;
+}
+
+#PostArea{
+    box-sizing: border-box;
+    padding: 10px;
+    width: 900px;
+    min-height: 610px;
+    background: rgba(0, 148, 0, 0.322);
+}
+
+#UpdateProfileScreen{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    z-index: 100;
+    background: rgba(0, 0, 0, 0.856);
+    color: white;
+    visibility: hidden;
+}
+
+#UpdateProfile{
+    position: relative;
+    top: 50px;
+    left: 240px;
+    width: 400px;
+    height: auto;
+    z-index: 101;
+    color: rgb(29, 29, 29);
+    background: white;
+    border-radius: 10px;
+    padding: 15px;
+}
+
+#UpdateAvatar{
+    position: relative;
+    top: -350px;
+    left: 680px;
+    width: 400px;
+    height: 100px;
+    z-index: 101;
+    color: rgb(29, 29, 29);
+    background: white;
+    border-radius: 10px;
+    padding: 15px;
+}
+
+#UpdatePassword{
+    position: relative;
+    top: -338px;
+    left: 680px;
+    width: 405px;
+    height: 223px;
+    z-index: 101;
+    color: rgb(29, 29, 29);
+    background: white;
+    border-radius: 10px;
+    padding: 15px;
+}
+
+#UpdateProfile h3, #UpdatePassword h3{
+    text-align: center;
+    margin-bottom: 20px;
+    color: rgb(0, 78, 97);
+}
+
+#UpdateProfile p{
+    margin: 10px 0px 10px 0px;
+    color: rgb(0, 78, 97);
+}
+
+#updateNameInput, #updateAddrsInput, #updateEmailInput, #updateHobbyInput{
+    border-radius: 3px;
+    border: 1px solid rgb(0, 78, 97);
+    width: 100%;
+    height: 30px;
+    font-size: 17px;
+}
+
+#oldPass, #newPass1, #newPass2{
+    border-radius: 3px;
+    border: 1px solid rgb(0, 78, 97);
+    width: 100%;
+    height: 30px;
+    font-size: 17px;
+}
+
+#UpdateProfile #passChangeBtn{
+    margin-bottom: 10px;
+    border-radius: 3px;
+    border: none;
+    width: 100%;
+    height: 30px;
+    font-size: 17px;
+    cursor: pointer;
+    background: rgb(0, 119, 255);
+    color: white;
+}
+
+#commitBTN, #CancelBTN{
+    width: 197px;
+    height: 30px;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#ChangePassBTN{
+    width: 197px;
+    height: 30px;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    background: linear-gradient(to bottom, rgb(0, 132, 255), rgb(19, 0, 128));
+    margin-top: 9px;
+    margin-left: 105px;
+}
+
+#commitBTN{
+    background: linear-gradient(to bottom, rgb(0, 255, 0), green);
+}
+
+#CancelBTN{
+    background: linear-gradient(to bottom, rgb(255, 153, 0), rgb(255, 0, 0));
+}

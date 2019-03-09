@@ -1,0 +1,309 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-image: url('../img/bg.png');
+    background-size: cover;
+    font-family: Arial, Helvetica, sans-serif;
+    background-attachment: fixed;
+}
+
+#MenuBar{
+    width: 110%;
+    height: 50px;
+    background: rgb(0, 117, 0);
+    position: fixed;
+    z-index: 10;
+}
+#MenuBar img{
+    width: 40px;
+    height: 40px;
+    background: rgb(255, 255, 255);
+    position: absolute;
+    left: 100px;
+    top: 5px;
+    border: 3px solid white;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+#searchBox{
+    width: 400px;
+    height: 30px;
+    position: absolute;
+    left: 150px;
+    top: 10px;
+    border-radius: 5px;
+    border: none;
+    cursor: text;
+    padding-left: 10px;
+}
+
+#searchBTN{
+    width: 50px;
+    height: 30px;
+    position: absolute;
+    left: 500px;
+    top: 10px;
+    background: rgb(241, 241, 241);
+    background-image: url('../img/search.png');
+    background-size: 40px 40px;
+    background-position: 8px -6px;
+    background-repeat: no-repeat;
+    border: none;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;  
+    cursor: pointer;
+    transition: all 0.2s ease-out;
+}
+
+#searchBTN:hover{
+    width: 70px;
+    left: 480px;
+    height: 30px;
+}
+
+#notifiBox, #HomeBTN, #ProfileBTN ,#LogoutBTN{
+    background: transparent;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 15px;
+    position: absolute;
+    height: 50px;
+    text-align: left;
+    padding-right: 10px;
+    padding-left: 50px;
+}
+
+#notifiBox:hover{
+    background: yellowgreen;
+    background-image: url('../img/bell.png');
+    background-size: 30px 30px;
+    background-repeat: no-repeat;
+    background-position: 10px 10px;
+    left: 730px;
+}
+#HomeBTN:hover{
+    background: yellowgreen; 
+    background-image: url('../img/Home.png');
+    background-size: 30px 30px;
+    background-repeat: no-repeat;
+    background-position: 10px 10px;
+    left: 600px;
+}
+#ProfileBTN:hover{
+    background: yellowgreen; 
+    width: 130px;
+    background-image: url('../img/avatar/default-avatar.jpg');
+    background-size: 30px 30px;
+    background-repeat: no-repeat;
+    background-position: 10px 10px;
+    left: 870px;
+}
+#LogoutBTN:hover{
+    background: yellowgreen; 
+}
+
+#HomeBTN{
+    background-image: url('../img/Home.png');
+    background-size: 30px 30px;
+    background-repeat: no-repeat;
+    background-position: 10px 10px;
+    left: 600px;
+}
+
+#notifiBox{
+    width: 140px;
+    background-image: url('../img/bell.png');
+    background-size: 30px 30px;
+    background-repeat: no-repeat;
+    background-position: 10px 10px;
+    left: 730px;
+}
+
+#ProfileBTN{
+    width: 130px;
+    background-image: url('../img/avatar/default-avatar.jpg');
+    background-size: 30px 30px;
+    background-repeat: no-repeat;
+    background-position: 10px 10px;
+    left: 870px;
+}
+
+#LogoutBTN{
+    left: 1000px;
+    width: 150px;
+    padding-left: 10px;
+}
+
+#FriendListSideBar{
+    width: 250px;
+    min-height: 600px;
+    background: rgba(0, 148, 0, 0.322);
+    position: absolute;
+    top: 60px;
+    left: 90px;
+    padding: 0px 10px 10px 10px;
+    position: fixed;
+    z-index: 10;
+}
+
+#FriendListSideBar li{
+    margin-top: 10px;
+    padding: 3px;
+    width: 100%;
+    height: 50px;
+    background: rgb(75, 75, 75);
+    box-sizing: border-box;
+}
+
+#FriendListSideBar li:hover{
+    background: yellowgreen;
+    box-sizing: border-box;
+}
+
+#FriendListSideBar a{
+    text-decoration: none;
+}
+
+.friendName{
+    color: rgb(255, 255, 255);
+    position: relative;
+    top: -15px;
+    left: 5px;
+    font-size: 15px;
+}
+
+.friendAvatar{
+    width: 40px;
+    height: 40px;
+    background-image: url('../img/avatar/default-avatar.jpg');
+    background-size: cover;
+    border: 1px solid white;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+#PostArea{
+    box-sizing: border-box;
+    padding: 10px;
+    width: 900px;
+    min-height: 610px;
+    background: rgba(0, 148, 0, 0.322);
+    position: absolute;
+    top: 60px;
+    left: 370px;
+}
+
+#NewPost{
+    border-radius: 10px;
+    height:fit-content;
+    background: white;
+    padding: 10px 0px 0px 0px;
+}
+
+#newpostInput{
+    width: 100%;
+    height: 60px;
+    outline: none;
+    font-size: 17px;
+    border: none;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+#NewPostBTN{
+    width: 9%;
+    height: 30px;
+    background: rgb(0, 162, 255);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+    float: right;
+    position: relative;
+    top: -5px;
+}
+
+#Posts{
+    border-radius: 10px;
+    height:fit-content;
+    background: white;
+    margin-top:30px;
+    padding: 10px;
+}
+#Posts img{
+    margin: 10px 0px 0px 50px;
+}
+
+#Posts a{
+    color: rgb(46, 46, 46);
+    text-decoration: none;
+}
+
+#UpLoadPostOption{
+    background: rgb(63, 63, 63);
+    padding: 10px 10px 10px 10px;
+    border-radius: 0px 0px 10px 10px;
+    color: white;
+}
+
+.postMode{
+    color: rgb(0, 45, 51);
+    font-size: 10px;
+    float: right;
+}
+
+.postContent{
+    margin-left: 20px;
+    border-top: 1px solid gray;
+}
+
+.postLike{
+    padding-top: 4px;
+    color: rgb(255, 0, 43);
+    cursor: pointer;
+    width: fit-content;
+}
+
+.comment{
+    background: rgb(231, 231, 231);
+    border-radius: 5px;
+    margin-top: 10px; 
+    margin-left: 20px;
+    width: 95%;
+}
+
+.content{
+    margin-left: 15px;
+    padding: 10px;
+    font-size: 15px;
+}
+#addcomment{
+    background: rgb(162, 255, 162);
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 5px;
+}
+.addcommentTEXTBOX{
+    width: 90%;
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid rgb(199, 199, 199); 
+}
+#addcommentBTN{
+    width: 9%;
+    height: 30px;
+    background: rgb(0, 162, 255);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+    float: right;
+}
